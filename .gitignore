@@ -1,0 +1,10 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+.idea/
+.vscode/
+.DS_Store

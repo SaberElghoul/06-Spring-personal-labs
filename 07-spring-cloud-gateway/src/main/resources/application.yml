@@ -1,0 +1,9 @@
+server: { port: 8080 }
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: httpbin
+          uri: https://httpbin.org
+          predicates: [ Path=/get ]
+          filters: [ RemoveRequestHeader=Cookie ]
